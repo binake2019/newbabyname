@@ -41,6 +41,7 @@ for p in range(10000):
         , '不', '薨', '死', '贱', '凄', '惨', '魂', '悔', '病', '屠', '残', '瘴', '歇', '阴', '愁', '难', '怕', '侵', '虫'
         , '贫', '穷', '杀', '误', '藟', '催', '衢', '男', '役', '妻', '刀', '苦', '卒', '妇', '亡', '歼', '婚', '灭', '夭'
           , '雄']
+    # 屏蔽一些生僻字和标点符号字母
     l2 = '123465789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' \
          '”）)(）?/<>;:？、' \
          '.!矣昏泪窠禁寤丁黑［我你他她氵悲嗟断老恨萋性惊搔舅怨螽窥蠋鬵欲乱旧而古' \
@@ -51,7 +52,8 @@ for p in range(10000):
         while ls_sentens[num3] in l1 or ls_sentens[num4] in l1:
             num3 = random.randint(0, len(ls_sentens) - 1)
             num4 = random.randint(0, len(ls_sentens) - 1)
-        xing = '唐'
+         # 这里改成自己的姓氏
+        xing = '金'
         ls1 = ''.join(dict_all[shi_name])
         print('【' + xing + ls_sentens[num3] + ls_sentens[num4] + '】', shi_name[3:].strip(),
                file=f)
