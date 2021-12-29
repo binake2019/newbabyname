@@ -25,6 +25,7 @@ for i in dict_songci.keys():
 
 print(len(dict_all))
 f = open('d:\\起名字\\name'+now+'.txt', 'a')
+# 需要多少个名字，更改数字即可
 for p in range(10000):
     num1 = random.randint(0, len(dict_all) - 1)  # 随机选一首诗歌
     ls_name = []
